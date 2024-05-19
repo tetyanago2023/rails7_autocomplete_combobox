@@ -69,6 +69,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "hotwire_combobox", "~> 0.3.0"
+gem "hotwire_combobox", github: "Deanout/hotwire_combobox", branch: "video"
 
 gem "faker", "~> 3.3"

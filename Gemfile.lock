@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/Deanout/hotwire_combobox.git
+  revision: 3067c2205291d6185165078f851b2de43d629c72
+  branch: video
+  specs:
+    hotwire_combobox (0.1.32)
+      rails (>= 7.0.7.2)
+      stimulus-rails (>= 1.2)
+      turbo-rails (>= 1.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -105,10 +115,6 @@ GEM
       i18n (>= 1.8.11, < 2)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    hotwire_combobox (0.3.0)
-      rails (>= 7.0.7.2)
-      stimulus-rails (>= 1.2)
-      turbo-rails (>= 1.2)
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
     importmap-rails (2.0.1)
@@ -258,7 +264,7 @@ DEPENDENCIES
   capybara
   debug
   faker (~> 3.3)
-  hotwire_combobox (~> 0.3.0)
+  hotwire_combobox!
   importmap-rails
   jbuilder
   pg (~> 1.1)
