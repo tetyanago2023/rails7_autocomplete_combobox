@@ -1,7 +1,8 @@
-
-<div class="youtube">
-  <%= form_with url: posts_path do |form| %>
-    <%= form.combobox :search, posts_path,
-                      name_when_new: :search, id: "posts-container", mobile_at: "0px" %>
-  <% end %>
-</div>
+<%= turbo_frame_tag "Combobox" do %>
+  <div class="youtube">
+    <%= form_with url: posts_path, data: { controller: "combobox", combobox_target: "form" } do |form| %>
+      <%= form.combobox :search, posts_path,
+                        name_when_new: :search, id: "posts-container", mobile_at: "0px" %>
+    <% end %>
+  </div>
+<% end %>
